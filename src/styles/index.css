@@ -1,0 +1,53 @@
+:root {
+  --prm-clr:hsl(210, 50%, 8%);
+  --secondary-clr:hsl(140, 100%, 30%);
+  --accent-clr:hsl(159, 96%, 30%);
+  --hero-title-clr:var(--secondary-clr);
+  --hero-caption-clr:hsl(210, 50%, 40%);
+  --profit-clr:hsl(120, 100%, 30%);
+  --lose-clr:hsl(0, 80%, 30%);
+  --price-clr:var(--accent-clr);
+  --body-bg:hsl(0, 0%, 97%);
+  --header-bg:white;
+}
+
+.dark-theme {
+  --prm-clr:hsl(210, 50%, 95%);
+  --secondary-clr:hsl(140, 100%,30%);
+  --accent-clr:hsl(159, 96%, 60%);
+  --hero-title-clr:var(--secondary-clr);
+  --hero-caption-clr:hsl(210, 50%, 40%);
+  --profit-clr:hsl(120, 100%, 60%);
+  --lose-clr:hsl(0, 80%, 60%);
+  --price-clr:var(--accent-clr);
+  --body-bg:hsl(0, 0%, 8%);
+  --header-bg:hsl(0, 0%, 12%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--body-bg);
+  max-width: 220rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.MuiPagination-ul li button {
+  font-size: clamp(1.4rem,1.5rem,1.5vw) !important;
+}/*# sourceMappingURL=index.css.map */

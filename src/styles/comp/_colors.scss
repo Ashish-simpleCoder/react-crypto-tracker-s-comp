@@ -1,0 +1,36 @@
+:root{
+   --prm-clr:hsl(210, 50%, 8%);
+   --secondary-clr:hsl(140, 100%, 30%);
+   --accent-clr:hsl(159, 96%, 30%);
+
+   --hero-title-clr:var(--secondary-clr);
+   --hero-caption-clr:hsl(210, 50%, 40%);
+
+   --profit-clr:hsl(120, 100%, 30%);
+   --lose-clr:hsl(0, 80%, 30%);
+
+   --price-clr:var(--accent-clr);
+
+
+   --body-bg:hsl(0, 0%, 97%);
+   --header-bg:white;
+}
+
+.dark-theme{
+   --prm-clr:hsl(210, 50%, 95%);
+   --secondary-clr:hsl(140, 100%,30%);
+   --accent-clr:hsl(159, 96%, 60%);
+
+   --hero-title-clr:var(--secondary-clr);
+   --hero-caption-clr:hsl(210, 50%, 40%);
+
+   --profit-clr:hsl(120, 100%, 60%);
+   --lose-clr:hsl(0, 80%, 60%);
+
+   --price-clr:var(--accent-clr);
+
+
+
+   --body-bg:hsl(0, 0%, 8%);
+   --header-bg:hsl(0, 0%, 12%);
+}

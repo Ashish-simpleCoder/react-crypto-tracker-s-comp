@@ -1,0 +1,30 @@
+@import "./comp/colors";
+*{
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+html,body,#root{
+   height: 100%;
+}
+
+html{
+   font-size:62.5%;
+}
+body{
+   background:var(--body-bg);
+   // padding-bottom: 5rem;
+   max-width:220rem;
+}
+
+
+a{
+   text-decoration: none;
+   // color:rgb(255, 102, 0);
+}
+.MuiPagination-ul li button{
+   font-size:clamp(1.4rem,1.5rem,1.5vw) !important;
+
+}
