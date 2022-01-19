@@ -12,6 +12,7 @@ export const CryptoCtx = memo(({children})=>{
          data:[]
       }
    })
+   const [trending_coins,setTrendingCoins] = useState([])
    const [TABLE_COINS, setTableCoins] = useState([])
    const [page, setPage] = useState({
       start:0,end:9,active_page:1
@@ -27,7 +28,7 @@ export const CryptoCtx = memo(({children})=>{
 
 
    return(
-      <C.Provider value={{...coin,setCoin, TABLE_COINS, setTableCoins, ...page, setPage, dark,setDark}}> {children} </C.Provider>
+      <C.Provider value={{...coin,setCoin, TABLE_COINS, setTableCoins, ...page, setPage, dark,setDark, trending_coins,setTrendingCoins}}> {children} </C.Provider>
    )
 })
 const CryptoState = () => useContext(C)

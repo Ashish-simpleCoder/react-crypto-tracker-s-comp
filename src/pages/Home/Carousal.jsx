@@ -7,8 +7,8 @@ import CarousalItem from "./CarousalItem"
 
 
 const Carousal = memo(()=>{
-   const {currency, symbol} = CryptoState()
-   const [trending_coins,setTrendingCoins] = useState([])
+   const {currency, symbol, trending_coins, setTrendingCoins} = CryptoState()
+   // const [trending_coins,setTrendingCoins] = useState([])
    const [autoPlay, setAutoPlay] = useState(false)
 
    setTimeout(()=>setAutoPlay(true),1000)

@@ -18,8 +18,9 @@ const CoinPage = memo(()=>{
 
    return(
       <StyleCoinPage>
-         { details && <CoinSideBar image={details?.image?.large} name={details.name} width={'20rem'} description={description?.en?.split(". ")[0]}/>}
-         <CoinGraph id={id}/>
+         { details && <CoinSideBar image={image?.large} name={name} width={'20rem'} description={description?.en?.split(". ")[0]}/>}
+         { details &&  <CoinGraph id={id}/>}
+
       </StyleCoinPage>
    )
 })
