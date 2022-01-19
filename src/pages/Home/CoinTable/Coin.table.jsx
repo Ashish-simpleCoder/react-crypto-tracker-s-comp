@@ -6,7 +6,7 @@ import TableBody from "./Table.body"
 const table_heads = ['Coin','Price','24h Change','Market Cap']
 const CoinTable = memo(()=>{
     return(
-        <StyledTable style={{borderCollapse:'collapse',minWidth:'40rem'}}>
+        <StyledTable style={{borderCollapse:'collapse',minWidth:'60rem'}} id='data_table'>
             <TableHead heads={table_heads}/>
             <TableBody/>
         </StyledTable>

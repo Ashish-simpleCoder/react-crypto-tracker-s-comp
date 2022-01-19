@@ -45,6 +45,7 @@ const StyledHeader = styled.header`
    background:var(--header-bg);
    position:sticky;
    top:0;
+   z-index:2;
 `
 
 const StyledLogoContainer = styled.section`
