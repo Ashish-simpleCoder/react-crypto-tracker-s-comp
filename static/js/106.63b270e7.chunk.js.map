@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/106.63b270e7.chunk.js","mappings":"6KAEMA,GAAWC,EAAAA,EAAAA,OAAK,WACnB,OACG,2BAGN","sources":["pages/Coin/Coin.page.jsx"],"sourcesContent":["import { memo } from \"react\";\r\n\r\nconst CoinPage = memo(()=>{\r\n   return(\r\n      <></>\r\n   )\r\n})\r\nexport default CoinPage\r\n"],"names":["CoinPage","memo"],"sourceRoot":""}

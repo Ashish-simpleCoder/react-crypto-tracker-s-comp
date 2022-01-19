@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_crypto_tracker_s_comp=self.webpackChunkreact_crypto_tracker_s_comp||[]).push([[106],{2106:function(r,c,e){e.r(c);var t=e(2791),a=e(184),n=(0,t.memo)((function(){return(0,a.jsx)(a.Fragment,{})}));c.default=n}}]);
-//# sourceMappingURL=106.63b270e7.chunk.js.map
