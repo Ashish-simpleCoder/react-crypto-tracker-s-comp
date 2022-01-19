@@ -21,7 +21,8 @@ export default CoinGraph
 const StyledGraphContainer = styled.section`
     position:relative;
     width:100%;
-    padding:3rem;
+    padding:3rem clamp(1rem,3rem,3vw);
+
 
     @media(min-width:700px){
         width:calc(100% - 30rem);
