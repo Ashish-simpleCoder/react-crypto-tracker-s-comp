@@ -5,7 +5,12 @@ const C = createContext(null)
 export const CryptoCtx = memo(({children})=>{
    const [coin, setCoin] = useState({
       currency:'INR',
-      symbol:'₹'
+      symbol:'₹',
+      details:{},
+      history:{
+         days:1,
+         data:[]
+      }
    })
    const [TABLE_COINS, setTableCoins] = useState([])
    const [page, setPage] = useState({
