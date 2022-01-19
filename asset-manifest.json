@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-crypto-tracker-s-comp/static/css/main.1d03d9fa.css",
+    "main.js": "/react-crypto-tracker-s-comp/static/js/main.71b609b7.js",
+    "static/js/106.63b270e7.chunk.js": "/react-crypto-tracker-s-comp/static/js/106.63b270e7.chunk.js",
+    "static/css/107.975ad7fd.chunk.css": "/react-crypto-tracker-s-comp/static/css/107.975ad7fd.chunk.css",
+    "static/js/107.d3ab4f01.chunk.js": "/react-crypto-tracker-s-comp/static/js/107.d3ab4f01.chunk.js",
+    "static/js/411.3c6e4358.chunk.js": "/react-crypto-tracker-s-comp/static/js/411.3c6e4358.chunk.js",
+    "index.html": "/react-crypto-tracker-s-comp/index.html",
+    "main.1d03d9fa.css.map": "/react-crypto-tracker-s-comp/static/css/main.1d03d9fa.css.map",
+    "main.71b609b7.js.map": "/react-crypto-tracker-s-comp/static/js/main.71b609b7.js.map",
+    "106.63b270e7.chunk.js.map": "/react-crypto-tracker-s-comp/static/js/106.63b270e7.chunk.js.map",
+    "107.975ad7fd.chunk.css.map": "/react-crypto-tracker-s-comp/static/css/107.975ad7fd.chunk.css.map",
+    "107.d3ab4f01.chunk.js.map": "/react-crypto-tracker-s-comp/static/js/107.d3ab4f01.chunk.js.map",
+    "411.3c6e4358.chunk.js.map": "/react-crypto-tracker-s-comp/static/js/411.3c6e4358.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d03d9fa.css",
+    "static/js/main.71b609b7.js"
+  ]
+}
