@@ -1,36 +1,48 @@
 :root{
    --prm-clr:hsl(210, 50%, 8%);
    --secondary-clr:hsl(140, 100%, 30%);
-   --accent-clr:hsl(159, 96%, 30%);
+   --accent-clr:hsl(0, 0%, 80%);
+   --border:hsl(0,0%,80%);
 
    --hero-title-clr:var(--secondary-clr);
-   --hero-caption-clr:hsl(210, 50%, 40%);
+   --hero-caption-clr:hsl(0, 0%, 80%);
 
-   --profit-clr:hsl(120, 100%, 30%);
-   --lose-clr:hsl(0, 80%, 30%);
+   --profit-clr:hsl(120, 100%, 40%);
+   --lose-clr:hsl(0, 80%, 60%);
 
    --price-clr:var(--accent-clr);
+   --coin-name-clr:white;
 
 
-   --body-bg:hsl(0, 0%, 97%);
+   --body-bg:hsl(0, 0%, 95%);
    --header-bg:white;
+   --table-bg:hsl(0, 0%, 100%);
 }
 
 .dark-theme{
    --prm-clr:hsl(210, 50%, 95%);
-   --secondary-clr:hsl(140, 100%,30%);
-   --accent-clr:hsl(159, 96%, 60%);
+   --secondary-clr:hsl(140, 100%,35%);
+   --accent-clr:hsl(0, 0%, 80%);
+   --border:hsl(0,0%,20%);
+
 
    --hero-title-clr:var(--secondary-clr);
-   --hero-caption-clr:hsl(210, 50%, 40%);
+   --hero-caption-clr:hsl(0, 0%, 80%);
 
    --profit-clr:hsl(120, 100%, 60%);
    --lose-clr:hsl(0, 80%, 60%);
 
    --price-clr:var(--accent-clr);
+   --coin-name-clr:white;
 
 
 
-   --body-bg:hsl(0, 0%, 8%);
+   --body-bg:hsl(0, 0%, 5%);
    --header-bg:hsl(0, 0%, 12%);
+   --table-bg:hsl(0, 0%, 8%);
+
+   .theme_img{
+      filter:invert(0.9);
+   }
+
 }

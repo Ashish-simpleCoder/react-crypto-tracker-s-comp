@@ -1,6 +1,5 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
 
 const CarousalItem = memo(({coin, select_symbol})=>{
    const {id, name, symbol ,image, price_change_percentage_24h, current_price} = coin
@@ -38,6 +37,6 @@ const ItemStyle = {
    textTransform:'uppercase',
 }
 const SpanStyle = {
-   color:'var(--price-clr)',
+   color:'var(--coin-name-clr)',
    fontSize:'clamp(1.3rem,1.5rem,1.5vw)'
 }

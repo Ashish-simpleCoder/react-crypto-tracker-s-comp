@@ -13,9 +13,8 @@ const Carousal = memo(()=>{
 
    setTimeout(()=>setAutoPlay(true),1000)
 
-   useEffect(async()=>{
-      const coins = await fetchTrendingCoins(currency)
-      setTrendingCoins(coins)
+   useEffect(()=>{
+      fetchTrendingCoins(currency).then(coins=>setTrendingCoins(coins))
    }, [currency])
 
 

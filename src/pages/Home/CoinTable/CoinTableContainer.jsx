@@ -1,0 +1,21 @@
+import { memo, useEffect } from "react";
+import CryptoState from "../../../context/CryptoCtx";
+import fetchCoinsDetails from "../../../utils/fetchCoinsDetails";
+import CoinTable from "./Coin.table";
+import Pagination from "./Pagination";
+
+
+const CoinTableContainer = memo(({heading})=>{
+    const {currency, setTableCoins} = CryptoState()
+    useEffect(()=>{
+        fetchCoinsDetails(currency).then(res=>setTableCoins(res))
+    },[setTableCoins,currency])
+    return(
+        <section style={{padding:'3rem',textAlign:'center'}}>
+            <h2 style={{fontSize:'clamp(2rem,2.6rem,2.6vw)',margin:'1rem 0 2rem 0'}}>{heading}</h2>
+            <CoinTable/>
+            <Pagination/>
+        </section>
+    )
+})
+export default CoinTableContainer

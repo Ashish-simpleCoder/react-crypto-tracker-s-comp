@@ -1,22 +1,25 @@
 import {memo} from 'react'
 import styled from 'styled-components'
+import CryptoState from '../context/CryptoCtx'
+import Button from './Button'
 import SelectCurr from './SelectCurr'
 
-const title_lab = 'change color theme - light and dark'
 
 const Header = memo(()=>{
+   const {setDark,dark} = CryptoState()
+   const changeClrTheme = () => setDark(!dark)
    return(
       <StyledHeader>
          <LogoContainer/>
          <SelectCurr/>
-         <button title={title_lab} onClick={changeClrTheme} style={{position:'absolute',right:'0',marginInlineState:'2rem'}}>dark</button>
+         <Button handleClick={changeClrTheme}>
+            <img src={"./imgs/"+(dark ? 'dark' : 'light')+"_mode.png"} alt="color icon"  style={{width:'3rem',height:'3rem'}}className='theme_img'/>
+         </Button>
       </StyledHeader>
    )
 })
 
 export default Header
-const changeClrTheme = () => document.body.classList.toggle('dark-theme')
-changeClrTheme()
 const LogoContainer = memo(() => {
    return(
       <StyledLogoContainer>
@@ -33,12 +36,16 @@ const StyledHeader = styled.header`
    padding:1rem 3rem;
    display:flex;
    justify-content:space-between;
+   align-items:center;
    background:var(--header-bg);
+   position:sticky;
+   top:0;
 `
 
 const StyledLogoContainer = styled.section`
    display:flex;
    align-items:center;
+   flex:1;
    span{
       margin-inline-end:1rem;
    }
@@ -48,3 +55,4 @@ const StyledLogoContainer = styled.section`
       font-weight:400;
    }
 `
+

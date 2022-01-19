@@ -7,9 +7,22 @@ export const CryptoCtx = memo(({children})=>{
       currency:'INR',
       symbol:'₹'
    })
+   const [TABLE_COINS, setTableCoins] = useState([])
+   const [page, setPage] = useState({
+      start:0,end:9,active_page:1
+   })
+   const [dark, setDark] = useState(JSON.parse(localStorage.getItem('dark')) || false)
+
+   useEffect(()=>{
+      localStorage.setItem('dark',JSON.stringify(dark))
+      document.body.classList.toggle('dark-theme',dark)
+   },[dark])
+
+   useEffect(()=>setCoin(v=>({...v,symbol:v.currency === 'INR' ?'₹' :'$'})),[coin.currency, setCoin])
+
 
    return(
-      <C.Provider value={{...coin,setCoin}}> {children} </C.Provider>
+      <C.Provider value={{...coin,setCoin, TABLE_COINS, setTableCoins, ...page, setPage, dark,setDark}}> {children} </C.Provider>
    )
 })
 const CryptoState = () => useContext(C)
