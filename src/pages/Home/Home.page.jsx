@@ -5,7 +5,7 @@ import HeroSection from "./Hero.section";
 
 const HomePage = memo(()=>{
    const [visible, setVisible] = useState(false)
-   useEffect(()=>checkVisibility(setVisible),[])
+   useEffect(()=>checkVisibility(setVisible,'coin_table'),[])
    return(
       <>
          <HeroSection/>

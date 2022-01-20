@@ -4,13 +4,14 @@ import Graph from "../../components/Graph";
 import CryptoState from "../../context/CryptoCtx";
 import { fetchCoinHistory } from "../../utils/fetchCoinsDetails";
 
-const CoinGraph = memo(({id})=>{
+const CoinGraph = memo(({id, visible})=>{
     const {history, currency, setCoin} = CryptoState()
     useLayoutEffect(()=>{
-        fetchCoinHistory(id, history.days, currency).then(({prices})=>setCoin(v=>({...v,history:{...history,data:prices}})))
-    },[currency,history,id,setCoin,])
+        console.log('ok')
+        visible && fetchCoinHistory(id, history.days, currency).then(({prices})=>setCoin(v=>({...v,history:{...v.history,data:prices}})))
+    },[currency,id,setCoin,visible])
     return(
-        <StyledGraphContainer>
+        <StyledGraphContainer id='coin_graph'>
             <Graph data={history.data} days={history.days} currency={currency}/>
         </StyledGraphContainer>
     )

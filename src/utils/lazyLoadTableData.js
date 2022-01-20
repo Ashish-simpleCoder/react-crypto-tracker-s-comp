@@ -1,4 +1,4 @@
-const checkVisibility = (setVisible) =>{
+const checkVisibility = (setVisible,element) =>{
     const options = {
         root:null,
         rootMargin:'0px',
@@ -8,11 +8,10 @@ const checkVisibility = (setVisible) =>{
         entries.forEach(entry=>{
             if(entry.isIntersecting) {
                 setVisible(true)
-                io.unobserve(window.data_table)
+                io.unobserve(window[element])
             }
-            // else io.unobserve(window.data_table)
         })
     },options)
-    io.observe(window.data_table)
+    io.observe(window[element])
 }
 export default checkVisibility
