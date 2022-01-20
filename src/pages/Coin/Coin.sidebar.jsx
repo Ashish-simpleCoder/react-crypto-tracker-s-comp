@@ -5,7 +5,6 @@ import Image from "../../components/Image";
 import Para from "../../components/Para";
 
 const SideBar = memo(({image,name, width, description})=>{
-
     return(
         <StyledSideBar>
             {image && <Image img={image} width={width}/>}
@@ -18,12 +17,10 @@ export default SideBar
 
 const StyledSideBar = styled.section`
     padding:3rem clamp(1rem,3rem,3vw);
-    border-right:1px solid;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    /* left:0; */
     width:100%;
     height:50rem;
 
@@ -31,5 +28,6 @@ const StyledSideBar = styled.section`
         position:fixed;
         width:30rem;
         height:100%;
+        border-right:1px solid;
     }
 `
