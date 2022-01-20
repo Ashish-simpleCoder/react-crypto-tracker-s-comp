@@ -8,14 +8,13 @@ import CarousalItem from "./CarousalItem"
 
 const Carousal = memo(()=>{
    const {currency, symbol, trending_coins, setTrendingCoins} = CryptoState()
-   // const [trending_coins,setTrendingCoins] = useState([])
    const [autoPlay, setAutoPlay] = useState(false)
 
    setTimeout(()=>setAutoPlay(true),1000)
 
    useEffect(()=>{
       fetchTrendingCoins(currency).then(coins=>setTrendingCoins(coins))
-   }, [currency])
+   }, [currency, setTrendingCoins])
 
 
    return(

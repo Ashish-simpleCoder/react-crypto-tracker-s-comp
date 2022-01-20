@@ -1,6 +1,5 @@
 import { memo, useLayoutEffect } from "react";
 import styled from "styled-components";
-import { HistoricalChart } from "../../api/api";
 import Graph from "../../components/Graph";
 import CryptoState from "../../context/CryptoCtx";
 import { fetchCoinHistory } from "../../utils/fetchCoinsDetails";
@@ -9,7 +8,7 @@ const CoinGraph = memo(({id})=>{
     const {history, currency, setCoin} = CryptoState()
     useLayoutEffect(()=>{
         fetchCoinHistory(id, history.days, currency).then(({prices})=>setCoin(v=>({...v,history:{...history,data:prices}})))
-    },[])
+    },[currency,history,id,setCoin,])
     return(
         <StyledGraphContainer>
             <Graph data={history.data} days={history.days} currency={currency}/>

@@ -1,7 +1,6 @@
 import { memo, useLayoutEffect } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import MainWrapper from "../../components/MainWrapper";
 import CryptoState from "../../context/CryptoCtx";
 import { selectedCoinDetails } from "../../utils/fetchCoinsDetails";
 import CoinSideBar from "./Coin.sidebar";
